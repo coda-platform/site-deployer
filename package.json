@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "axios": "^0.27.2"
-  }
+  },
+  "name": "site-deployer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "deploy": "node ./deploy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coda-platform/platform-manager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coda-platform/platform-manager/issues"
+  },
+  "homepage": "https://github.com/coda-platform/platform-manager#readme",
+  "description": ""
 }
