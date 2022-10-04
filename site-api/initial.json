@@ -1,0 +1,10 @@
+{
+    "data": {
+        "appName": "site-api2",
+        "hasPersistentData": false
+    },
+    "caproverUrl": "http://captain.site1-sandbox.coda-platform.com/",
+    "caproverPassword": "$CAPROVER_PASSWORD",
+    "path": "/user/apps/appDefinitions/register",
+    "method": "POST"
+}

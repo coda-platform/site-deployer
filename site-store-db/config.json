@@ -1,0 +1,27 @@
+{
+    "data": {
+        "appName": "site-store-db2",
+        "forceSsl": false,
+        "instanceCount": 1,
+        "notExposeAsWebApp": false,
+        "envVars": [
+            {
+                "key": "POSTGRES_USER",
+                "value": "test"
+            },
+            {
+                "key": "POSTGRES_PASSWORD",
+                "value": "unsafeunsafe"
+            },
+            {
+                "key": "POSTGRES_DB",
+                "value": "devbox"
+            }
+        ],
+        "comments": []
+    },
+    "caproverUrl": "$CAPROVER_URL",
+    "caproverPassword": "$CAPROVER_PASSWORD",
+    "path": "/user/apps/appDefinitions/update",
+    "method": "POST"
+}
