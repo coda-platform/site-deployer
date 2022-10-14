@@ -1,19 +1,23 @@
 const execSync = require('child_process').execSync
-
-const environment = "development"
+const dotenv = require('dotenv')
+dotenv.config()
 
 const services = [
     {
-        name: 'site-store-db',
-        url: 'https://github.com/coda-platform/site-store-db'
+        name: 'dicom-store',
+        url: 'https://github.com/coda-platform/dicom-store'
     },
     {
-        name: 'site-store-db-admin',
-        url: 'https://github.com/coda-platform/site-store-db-admin'
+        name: 'fhir-store-db',
+        url: 'https://github.com/coda-platform/fhir-store-db'
     },
     {
-        name: 'site-store-stub',
-        url: 'https://github.com/coda-platform/site-store-stub'
+        name: 'fhir-store-db-admin',
+        url: 'https://github.com/coda-platform/fhir-store-db-admin'
+    },
+    {
+        name: 'fhir-store',
+        url: 'https://github.com/coda-platform/fhir-store'
     },
     {
         name: 'site-cache-db',
@@ -33,10 +37,15 @@ const services = [
     }
 ]
 
+execSync(`caprover logout -n ${process.env.CAPROVER_NAME} || true`)
+
 for (const service of services) {
-    execSync(`git clone ${service.url} && ` +
+    execSync(
+        `rm -rf ${service.name} 2> /dev/null || true && ` +
+        `git clone ${service.url} && ` +
         `cd ${service.name} && ` +
         `cp ../envs/${service.name}.env .env && ` +
+        `echo "\n" >> .env && ` +
         `cat ../.env >> .env && ` +
         `npm install && ` +
         `npm run caprover:setup && ` +

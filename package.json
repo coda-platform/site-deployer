@@ -1,23 +1,23 @@
 {
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.3"
   },
   "name": "site-deployer",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "deploy": "node ./deploy.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coda-platform/platform-manager.git"
+    "url": "git+https://github.com/coda-platform/site-deployer.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/coda-platform/platform-manager/issues"
+    "url": "https://github.com/coda-platform/site-deployer/issues"
   },
-  "homepage": "https://github.com/coda-platform/platform-manager#readme",
+  "homepage": "https://github.com/coda-platform/site-deployer#readme",
   "description": ""
 }
