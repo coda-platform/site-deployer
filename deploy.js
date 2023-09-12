@@ -5,7 +5,7 @@ dotenv.config()
 const services = [
     {
         name: 'dicom-store',
-        url: 'https://github.com/coda-platform/dicom-store'
+        url: 'https://github.com/louisfb01/dicom-store'
     },
     {
         name: 'fhir-store-db',
@@ -13,11 +13,11 @@ const services = [
     },
     {
         name: 'fhir-store-db-admin',
-        url: 'https://github.com/coda-platform/fhir-store-db-admin'
+        url: 'https://github.com/louisfb01/fhir-store-db-admin'
     },
     {
         name: 'fhir-store',
-        url: 'https://github.com/coda-platform/fhir-store'
+        url: 'https://github.com/louisfb01/fhir-store'
     },
     {
         name: 'site-cache-db',
@@ -25,15 +25,15 @@ const services = [
     },
     {
         name: 'stats-api',
-        url: 'https://github.com/coda-platform/stats-api'
+        url: 'https://github.com/louisfb01/stats-api'
     },
     {
         name: 'learning-api',
-        url: 'https://github.com/coda-platform/learning-api'
+        url: 'https://github.com/louisfb01/learning-api'
     },
     {
         name: 'site-api',
-        url: 'https://github.com/coda-platform/site-api'
+        url: 'https://github.com/louisfb01/site-api'
     }
 ]
 
